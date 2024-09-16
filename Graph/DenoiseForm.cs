@@ -48,7 +48,7 @@ namespace Graph
             this.numericUpDownSmoothValue.Value = this.numericUpDownIncrement.Value;
             var threshold = (double)numericUpDownSmoothValue.Value;
             this.chart.ChartAreas["Result"].AxisX.LabelStyle.Format = "0";
-            this.chart.ChartAreas["PSD"].AxisX.LabelStyle.Format = "0.00"
+            this.chart.ChartAreas["PSD"].AxisX.LabelStyle.Format = "0.00";
             this.checkBoxHideOriginal.CheckedChanged += (sender, args) =>
             {
                 this.chart.Series["Original"].Color = this.checkBoxHideOriginal.Checked ? Color.Transparent : Color.DeepSkyBlue;
