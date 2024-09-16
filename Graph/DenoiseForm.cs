@@ -121,7 +121,6 @@ namespace Graph
             {
                 this.labelCurrentFile.Text = String.Format("Текущий файл:\n\nИмя файла: {0}\n\nДиректория файла: {1}",
                     file.Name, file.Directory);
-
                 (denoisedX, denoisedY) = UpdateGraphs(file, threshold);
             }
         }
